@@ -1,0 +1,106 @@
+@import "colors.scss";
+
+.cart {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+
+  > main {
+    padding: 2rem;
+    overflow-y: auto;
+
+    // for hide scrollbar
+    & ::-webkit-scrollbar {
+      display: none;
+    }
+
+    > h2 {
+      color: $tertiary;
+      font: 100 2rem "Roboto";
+    }
+  }
+
+  > aside {
+    border-radius: 100px 0 0 100px;
+    background-color: $primary;
+    color: $tertiary;
+    height: 100%;
+    width: 100%;
+    box-shadow: -10px 0px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    > h2 {
+      margin: 1rem;
+      font: 100 1.8rem "Roboto";
+      letter-spacing: 2px;
+
+      &:last-of-type {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+.cart-item {
+  background-color: $tertiary;
+  width: 100%;
+  border-radius: 10px;
+  margin: 2rem 0;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr 1fr;
+  align-items: center;
+
+  > img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+  }
+
+  > div {
+    display: flex;
+    // flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    height: 100%;
+
+    > button {
+      width: 30px;
+      height: 30px;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: $primary;
+      color: $tertiary;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      &:hover {
+        background-color: $secondary;
+        color: $primary;
+      }
+    }
+
+    > p {
+      width: 30px;
+      height: 30px;
+      display: grid;
+      place-items: center;
+    }
+  }
+
+  > svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

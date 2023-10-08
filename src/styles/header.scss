@@ -1,0 +1,51 @@
+@import "colors";
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  height: 10vh;
+  background-color: $secondary;
+  color: $tertiary;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+
+  // inside nav has h2
+  h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
+    color: $tertiary;
+  }
+
+  > main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    color: $tertiary;
+    // inside main has Link
+    a {
+      font-size: 1.5rem;
+      color: $primary;
+      margin: 0.1 rem;
+      transition: all 0.3s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    p {
+      position: absolute;
+      background-color: $tertiary;
+      border-radius: 50%;
+      width: 15px;
+      font: 900 0.7rem "roboto";
+      display: grid;
+      place-items: center;
+      transform: translate(80%, -80%);
+    }
+  }
+}
