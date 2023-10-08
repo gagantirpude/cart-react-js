@@ -4,9 +4,10 @@
   color: $tertiary;
   display: flex;
   padding: 3rem;
-  align-items: center;
+  // align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  height: 100vh;
 }
 
 .product-card {

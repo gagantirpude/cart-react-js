@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 
 // This is a component
 import Header from "./components/Header";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 
 // Styling
 import "./styles/app.scss";
@@ -21,7 +21,7 @@ const App = () => {
         <Route path="/card" element={<Card />} />
       </Routes>
       <Toaster />
-      <Footer />
+      {/* <Footer /> */}
     </Router>
   );
 };
